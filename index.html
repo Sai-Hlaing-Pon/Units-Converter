@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<title>Units-Converter</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <center>
+        <h2>Units-Converter</h2>
+        <h4>km to Mi, Mi to km</h4>
+    </center>
+
+    <div class="left">
+
+    </div>
+
+    <div class="main">
+        <center>
+
+            <fieldset>
+                <h3> Convert Kilometer To Miles</h3>
+                <p>Input km</p>
+                <p>
+                    <label>Kilometers</label>
+                    <input id="inputKilometers" type="number" placeholder="Kilometers"
+                        oninput="LengthConverter(this.value)" onchange="LengthConverterK2M(this.value)">
+
+                </p>
+                <p>Result in Miles: <span class="colorw" id="outputMiles"></span></p>
+            </fieldset>
+
+            <fieldset>
+                <h3> Convert Miles To kilometer</h3>
+                <p>Input Miles</p>
+
+                <p>
+                    <label>Miles</label>
+                    <input id="inputMiles" type="number" placeholder="Miles" oninput="LengthConverter(this.value)"
+                        onchange="LengthConverterM2K(this.value)">
+                </p>
+                <p>Result in Kilometers: <span class="colorw" id="outputKilometers"></span></p>
+            </fieldset>
+        </center>     <br>  
+    </div>
+    <br>
+    <center><h3>By Sai Hlaing Pon</h3 ></center>
+    <div class="right">
+
+    </div> 
+</body>
+</html>
